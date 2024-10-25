@@ -24,6 +24,7 @@ def init_db():
         ''')
         conn.commit()
 
+init_db()
 # Database connection helper function
 def get_db_connection():
     conn = sqlite3.connect(db_file)
